@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0">
+
+	<!-- configuracao do jpa -->
+    <persistence-unit name="labSpringRest" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <!--  <jta-data-source>java:/Laboratorio</jta-data-source>  -->
+        <class>com.lucianosilva.lab.core.entity.Clube</class>
+        <exclude-unlisted-classes />
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLInnoDBDialect"/>
+            <property name="hibernate.query.substitutions" value="true 1, false 0" />
+            <property name="hibernate.cache.use_query_cache" value="false" />
+            <property name="hibernate.cache.use_second_level_cache" value="false" />
+            <property name="hibernate.jdbc.fetch_size" value="30" />
+        </properties>
+    </persistence-unit>
+
+</persistence>
