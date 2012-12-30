@@ -16,7 +16,6 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<!--  <grepo.version>1.5.1</grepo.version>  -->
 		<mysql.version>5.1.8</mysql.version>
 		<spring.version>3.0.4.RELEASE</spring.version>
 		<slf4j.version>1.5.11</slf4j.version>
@@ -29,23 +28,6 @@
 	</properties>
 
 	<dependencies>
-		<!-- grepo libs
-		<dependency>
-			<groupId>org.codehaus.grepo</groupId>
-			<artifactId>grepo-core</artifactId>
-			<version>${grepo.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.codehaus.grepo</groupId>
-			<artifactId>grepo-query-commons</artifactId>
-			<version>${grepo.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.codehaus.grepo</groupId>
-			<artifactId>grepo-query-jpa</artifactId>
-			<version>${grepo.version}</version>
-		</dependency>
- 		-->
 
 		<!-- 3rd party libs -->
 		<dependency>
@@ -96,10 +78,7 @@
 			<artifactId>log4j</artifactId>
 			<version>${log4j.version}</version>
 		</dependency>
-		<!-- <dependency> <groupId>org.apache.cxf</groupId> <artifactId>cxf-rt-frontend-jaxws</artifactId> 
-			<version>${cxf.version}</version> </dependency> <dependency> <groupId>org.apache.cxf</groupId> 
-			<artifactId>cxf-rt-transports-http</artifactId> <version>${cxf.version}</version> 
-			</dependency> -->
+
 		<dependency>
 			<groupId>cglib</groupId>
 			<artifactId>cglib-nodep</artifactId>
@@ -127,16 +106,6 @@
 		</plugins>
 	</build>
 
-	<!-- <profiles> <profile> <id>spring-2.5.6</id> <dependencies> <dependency> 
-		<groupId>org.springframework</groupId> <artifactId>spring-aop</artifactId> 
-		<version>2.5.6</version> </dependency> <dependency> <groupId>org.springframework</groupId> 
-		<artifactId>spring-jdbc</artifactId> <version>2.5.6</version> </dependency> 
-		<dependency> <groupId>org.springframework</groupId> <artifactId>spring-orm</artifactId> 
-		<version>2.5.6</version> </dependency> <dependency> <groupId>org.springframework</groupId> 
-		<artifactId>spring-test</artifactId> <version>2.5.6</version> <scope>test</scope> 
-		</dependency> <dependency> <groupId>junit</groupId> <artifactId>junit</artifactId> 
-		<version>4.4</version> <scope>test</scope> </dependency> </dependencies> 
-		</profile> </profiles> -->
 	<repositories>
 		<repository>
 			<id>JbossRepository</id>
