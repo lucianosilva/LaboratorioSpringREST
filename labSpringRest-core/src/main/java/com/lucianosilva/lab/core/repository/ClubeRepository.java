@@ -30,5 +30,4 @@ public class ClubeRepository extends JpaGenericDAO<Clube, Long> {
 		super.setEntityManagerFactory(entityManagerFactory);
 	}
 
-
 }

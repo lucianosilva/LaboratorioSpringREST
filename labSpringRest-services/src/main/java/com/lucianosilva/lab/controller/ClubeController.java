@@ -6,6 +6,7 @@ package com.lucianosilva.lab.controller;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -33,6 +34,18 @@ public class ClubeController {
 
 	@Autowired
 	ClubeService clubeService;
+
+	/**
+	 * 
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping(value = "/listAll", method = RequestMethod.GET)
+	@ResponseBody
+	public List<Clube> findAll() throws Exception {
+		//
+		return clubeService.findAll();
+	}
 
 	/**
 	 * 
