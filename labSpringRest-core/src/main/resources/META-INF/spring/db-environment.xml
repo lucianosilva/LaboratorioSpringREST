@@ -11,7 +11,7 @@
 
 	<bean id="blogDataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
 		<property name="jndiName">
-			<value>java:/Laboratorio</value>
+			<value>java:jboss/datasources/blog</value>
 		</property>
 	</bean>
 

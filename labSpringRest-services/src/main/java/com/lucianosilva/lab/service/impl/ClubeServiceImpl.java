@@ -8,9 +8,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.lucianosilva.lab.service.ClubeService;
 import com.lucianosilva.lab.core.entity.Clube;
 import com.lucianosilva.lab.core.repository.ClubeRepository;
+import com.lucianosilva.lab.service.ClubeService;
 
 /**
  * @author luciano
@@ -35,6 +35,24 @@ public class ClubeServiceImpl implements ClubeService {
 	public Clube findById(Long id) {
 		// 
 		return clubeRepo.findById(id);
+	}
+
+	@Override
+	public void save(Clube clube) {
+		// 
+		clubeRepo.save( clube );
+	}
+
+	@Override
+	public void saveOrUpdate(Clube clube) {
+		// 
+		clubeRepo.merge( clube );
+	}	
+
+	@Override
+	public void remove(Clube clube) {
+		// 
+		clubeRepo.remove( clube );
 	}
 
 }
